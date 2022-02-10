@@ -1,0 +1,17 @@
+.complex {
+    position: relative;
+    //background: url("/images/complex-conference.jpg") no-repeat left top;
+    margin-bottom: 100px;
+
+    &-item {
+        width: 40%;
+        padding: 43px 0 47px;
+        color: #140202;
+    }
+
+    &-image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

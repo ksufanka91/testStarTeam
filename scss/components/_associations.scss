@@ -1,0 +1,25 @@
+.associations {
+    position: relative;
+    background: url("/images/association-pattern.png") no-repeat left top;
+    margin-bottom: 50px;
+
+    &-title {
+        max-width: 806px;
+        text-align: center;
+        margin: 0 auto 40px;
+    }
+
+    &-item {
+        width: 40%;
+        padding: 43px 0 47px;
+        color: #140202;
+    }
+
+    &-image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+
+}
