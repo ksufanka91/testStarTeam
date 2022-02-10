@@ -4,8 +4,8 @@
     margin-bottom: 100px;
 
     &-item {
-        width: 40%;
-        padding: 43px 0 47px;
+        width: 50%;
+        padding: 43px 30px 47px 0;
         color: #140202;
     }
 
@@ -13,5 +13,16 @@
         position: absolute;
         right: 0;
         bottom: 0;
+        height: 100%;
+        width: 50%;
+        object-fit: cover;
+    }
+
+    &-box {
+
+        &-bg {
+            background-color: #F8C67D;
+
+        }
     }
 }
