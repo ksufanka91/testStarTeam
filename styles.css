@@ -366,9 +366,23 @@ h2 {
   align-items: center;
   padding: 34px 0 33px;
   font-weight: 600; }
+  @media (max-width: 925px) {
+    .header {
+      display: flex;
+      flex-direction: column; } }
+  @media (max-width: 425px) {
+    .header {
+      width: 284px;
+      margin: 0 auto; } }
   .header-title {
     max-width: 650px;
     text-align: center; }
+    @media (max-width: 925px) {
+      .header-title {
+        margin-bottom: 20px; } }
+  @media (max-width: 425px) {
+    .header .button {
+      width: 100%; } }
 
 .first-screen {
   height: 1015px;
@@ -447,21 +461,21 @@ input[type="number"]::-webkit-inner-spin-button {
   .block-order .timer {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px; }
+    padding: 0 20px;
+    margin-bottom: 9px; }
     .block-order .timer span {
       font-size: 18px;
       font-weight: 700;
-      width: 56px;
-      padding: 6px 16px;
+      width: 66px;
+      padding: 9px 16px;
       color: #ffffff;
       background: linear-gradient(180deg, #F42C2B 0%, rgba(0, 0, 0, 0) 100%), #460D09;
       border-radius: 10px;
-      margin-bottom: 7px;
       text-align: center; }
     .block-order .timer-desc {
       display: flex;
       justify-content: space-between;
-      padding: 0 24px; }
+      padding: 0 30px; }
       .block-order .timer-desc span {
         font-size: 12px;
         font-weight: 600;
@@ -482,24 +496,24 @@ input[type="number"]::-webkit-inner-spin-button {
     background: #EAEAEC;
     border-radius: 10px;
     border: none;
-    padding: 14px 14px;
+    padding: 12px 14px;
     margin-bottom: 12px;
     cursor: pointer; }
   .form-btn {
     display: block;
-    margin: 11px auto 0;
+    margin: 21px auto 0;
     width: 90%;
     padding: 17px 22px; }
 
 .associations {
   position: relative;
-  background: url("images/association-pattern.png") no-repeat left -3px; }
+  background: url("images/association-pattern.png") no-repeat left top; }
   .associations-image-left .associations-image {
     left: 0;
     right: auto; }
   .associations-image-left .associations-item {
     margin-left: auto;
-    padding-left: 30px;
+    padding-left: 73px;
     padding-right: 0; }
   .associations-title {
     max-width: 806px;
@@ -512,7 +526,7 @@ input[type="number"]::-webkit-inner-spin-button {
       background: #f8c67d; }
   .associations-item {
     width: 50%;
-    padding: 20px 30px 51px 0;
+    padding: 20px 30px 46px 0;
     color: #140202; }
   .associations-image {
     position: absolute;
@@ -567,20 +581,21 @@ input[type="number"]::-webkit-inner-spin-button {
         font-size: 16px; }
 
 .promo {
-  padding: 32px 30px 0 0; }
+  padding: 31px 0 25px 0; }
   .promo-text {
+    max-width: 79%;
     font-weight: 600;
-    margin-right: 50px;
+    margin-right: 73px;
     text-align: center; }
-  .promo-image-box {
-    object-fit: contain; }
+  .promo-image {
+    margin-top: -13px; }
   .promo-bg {
     background-color: #F8C67D; }
 
 .effects {
   position: relative;
   background: #420707;
-  padding: 34px 33px;
+  padding: 38px 33px;
   border-radius: 15px;
   margin-bottom: 40px;
   color: #ffffff;
@@ -590,12 +605,13 @@ input[type="number"]::-webkit-inner-spin-button {
   .effects-title {
     width: 50%;
     text-align: center;
-    margin: 0 auto 30px; }
+    margin: 0 auto 30px;
+    font-size: 36px; }
   .effects-content {
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 15px;
-    padding: 37px 25px; }
+    padding: 28px 25px; }
     .effects-content .columns {
       display: flex;
       justify-content: space-between; }
@@ -635,7 +651,7 @@ input[type="number"]::-webkit-inner-spin-button {
     left: 50%; }
 
 .order {
-  padding-bottom: 100px;
+  padding-bottom: 38px;
   padding-top: 54px;
   background: url("images/order-bg.png") no-repeat, url("images/order-pattern.png") no-repeat;
   background-position: top center, left calc(50% + 20px) bottom 70px;
@@ -660,13 +676,16 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-bottom: 47px; }
   .components-text {
     text-align: center;
+    line-height: 36px;
     max-width: 45%;
-    margin: 0 auto 100px; }
+    margin: 0 auto 87px; }
+    .components-text span {
+      font-size: 30px; }
   .components-image {
     width: 150px;
     position: absolute;
-    top: -15px;
-    left: 146px; }
+    top: -11px;
+    left: 181px; }
   .components-items {
     display: flex;
     flex-wrap: wrap; }

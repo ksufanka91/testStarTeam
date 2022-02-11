@@ -7,15 +7,20 @@
 
     &-text {
         text-align: center;
+        line-height: 36px;
         max-width: 45%;
-        margin: 0 auto 100px;
+        margin: 0 auto 87px;
+
+        span {
+            font-size: 30px;
+        }
     }
 
     &-image {
         width: 150px;
         position: absolute;
-        top: -15px;
-        left: 146px;
+        top: -11px;
+        left: 181px;
     }
 
     &-items {

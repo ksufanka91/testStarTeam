@@ -1,6 +1,6 @@
 .associations {
     position: relative;
-    background: url("images/association-pattern.png") no-repeat left -3px;
+    background: url("images/association-pattern.png") no-repeat left top;
 
     &-image-left {
         .associations {
@@ -11,8 +11,9 @@
 
             &-item {
                 margin-left: auto;
-                padding-left: 30px;
+                padding-left: 73px;
                 padding-right: 0;
+
             }
         }
     }
@@ -34,7 +35,7 @@
 
     &-item {
         width: 50%;
-        padding: 20px 30px 51px 0;
+        padding: 20px 30px 46px 0;
         color: #140202;
     }
 

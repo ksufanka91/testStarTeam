@@ -1,15 +1,15 @@
 .promo {
-    padding: 32px 30px 0 0;
+    padding: 31px 0 25px 0;
 
     &-text {
+        max-width: 79%;
         font-weight: 600;
-        margin-right: 50px;
+        margin-right: 73px;
         text-align: center;
     }
 
-    &-image-box {
-
-        object-fit: contain;
+    &-image {
+        margin-top: -13px;
     }
 
     &-bg {

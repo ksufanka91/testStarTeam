@@ -26,23 +26,23 @@
         display: flex;
         justify-content: space-between;
         padding: 0 20px;
+        margin-bottom: 9px;
 
         span {
             font-size: 18px;
             font-weight: 700;
-            width: 56px;
-            padding: 6px 16px;
+            width: 66px;
+            padding: 9px 16px;
             color: $color-text-secondary;
             background: linear-gradient(180deg, #F42C2B 0%, rgba(0, 0, 0, 0) 100%), #460D09;
             border-radius: 10px;
-            margin-bottom: 7px;
             text-align: center;
         }
 
         &-desc {
             display: flex;
             justify-content: space-between;
-            padding: 0 24px;
+            padding: 0 30px;
 
             span {
                 font-size: 12px;
@@ -73,14 +73,14 @@
         background: #EAEAEC;
         border-radius: 10px;
         border: none;
-        padding: 14px 14px;
+        padding: 12px 14px;
         margin-bottom: 12px;
         cursor: pointer;
     }
 
     &-btn {
         display: block;
-        margin: 11px auto 0;
+        margin: 21px auto 0;
         width: 90%;
         padding: 17px 22px;
     }

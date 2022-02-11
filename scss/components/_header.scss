@@ -5,8 +5,29 @@
     padding: 34px 0 33px;
     font-weight: 600;
 
+    @include media-to(925px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include media-to(425px) {
+        width: 284px;
+        margin: 0 auto;
+    }
+
     &-title {
         max-width: 650px;
         text-align: center;
+
+
+        @include media-to(925px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .button {
+        @include media-to(425px) {
+            width: 100%;
+        }
     }
 }
