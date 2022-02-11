@@ -1,21 +1,40 @@
 .associations {
     position: relative;
     background: url("images/association-pattern.png") no-repeat left -3px;
-    margin-bottom: 50px;
+
+    &-image-left {
+        .associations {
+            &-image {
+                left: 0;
+                right: auto;
+            }
+
+            &-item {
+                margin-left: auto;
+                padding-left: 30px;
+                padding-right: 0;
+            }
+        }
+    }
 
     &-title {
         max-width: 806px;
         text-align: center;
-        margin: 0 auto 40px;
+        margin: 0 auto 55px;
     }
 
     &-box {
         position: relative;
+        min-height: 364px;
+
+        &-bg {
+            background: #f8c67d;
+        }
     }
 
     &-item {
         width: 50%;
-        padding: 43px 30px 47px 0;
+        padding: 20px 30px 51px 0;
         color: #140202;
     }
 
@@ -27,6 +46,4 @@
         width: 50%;
         object-fit: cover;
     }
-
-
 }

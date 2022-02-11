@@ -1,0 +1,89 @@
+.effects {
+    position: relative;
+    background: #420707;
+    padding: 34px 33px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    color: $color-text-secondary;
+    font-weight: 600;
+
+    span {
+        font-weight: 900;
+    }
+
+    &-title {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+    &-content {
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 37px 25px;
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 36px;
+            height: 490px;
+            width: 50%;
+
+            &-left {
+                align-items: flex-end;
+            }
+
+            &-right {
+                align-items: flex-start;
+            }
+        }
+    }
+
+    &-item {
+
+        &-1 {
+            max-width: 198px;
+            margin-right: 231px;
+        }
+
+        &-2 {
+            max-width: 239px;
+            margin-right: 303px;
+        }
+
+        &-3 {
+            max-width: 173px;
+            margin-right: 220px;
+        }
+
+        &-4 {
+            max-width: 209px;
+            margin-left: 270px;
+        }
+
+        &-5 {
+            max-width: 167px;
+            margin-left: 330px;
+        }
+
+        &-6 {
+            max-width: 266px;
+            margin-left: 270px;
+        }
+    }
+
+
+    &-image {
+        position: absolute;
+        width: 600px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}

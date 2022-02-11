@@ -1,0 +1,87 @@
+.block-order {
+    max-width: 356px;
+    background-color: $color-text-secondary;
+    color: $color-text;
+    padding: 30px 29px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 50px rgba(136, 136, 136, 0.25);
+
+    span {
+        color: $color-text;
+    }
+
+    &-title {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &-promotion {
+        font-size: 12px;
+        margin-bottom: 9px;
+        font-weight: 600;
+    }
+
+    .timer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        span {
+            font-size: 18px;
+            font-weight: 700;
+            width: 56px;
+            padding: 6px 16px;
+            color: $color-text-secondary;
+            background: linear-gradient(180deg, #F42C2B 0%, rgba(0, 0, 0, 0) 100%), #460D09;
+            border-radius: 10px;
+            margin-bottom: 7px;
+            text-align: center;
+        }
+
+        &-desc {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+
+            span {
+                font-size: 12px;
+                font-weight: 600;
+                width: 48px;
+                text-align: center;
+            }
+        }
+    }
+
+    &-offer {
+        max-width: 190px;
+        font-size: 12px;
+    }
+}
+
+.form {
+    margin-bottom: 17px;
+
+    &-item {
+        font-size: 12px;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        background: #EAEAEC;
+        border-radius: 10px;
+        border: none;
+        padding: 14px 14px;
+        margin-bottom: 12px;
+        cursor: pointer;
+    }
+
+    &-btn {
+        display: block;
+        margin: 11px auto 0;
+        width: 90%;
+        padding: 17px 22px;
+    }
+}

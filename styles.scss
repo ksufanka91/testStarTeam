@@ -67,9 +67,9 @@ h1 {
 h2 {
     font-size: 1.5rem;
 }
-
-
-
+.mb-0 {
+    margin-bottom: 0 !important;
+}
 .d-flex {
     display: flex;
 }
@@ -81,6 +81,10 @@ h2 {
 
 @import "scss/components/header";
 @import "scss/components/first-screen";
+@import "scss/components/block-order";
 @import "scss/components/associations";
 @import "scss/components/poligamy";
-@import "scss/components/complex";
+@import "scss/components/promo";
+@import "scss/components/effects";
+@import "scss/components/order";
+@import "scss/components/components";

@@ -1,0 +1,34 @@
+.order {
+    padding-bottom: 100px;
+    padding-top: 54px;
+    background: url("images/order-bg.png") no-repeat,
+    url("images/order-pattern.png") no-repeat;
+
+    background-position: top center, left calc(50% + 20px) bottom 70px;
+
+    background-size: contain, 20%;
+    color: $color-text-secondary;
+
+    .column {
+        width: 50%;
+
+        &-left {
+
+        }
+    }
+
+    &-title {
+        text-align: center;
+        max-width: 390px;
+        margin: 20px 0 21px 69px;
+    }
+
+    &-image {
+        width: 253px;
+        margin-left: 138px;
+    }
+
+    .block-order {
+        margin-left: 67px;
+    }
+}

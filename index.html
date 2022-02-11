@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,25 +44,17 @@
                 </div>
 
                 <div class="column">
-                    <div class="first-screen-timer">
-                        <div class="first-screen-timer-title">
+                    <div class="block-order">
+                        <div class="block-order-title">
                             Успей получить <span>Силу Султана бесплатно*</span>, пока действует акция
                         </div>
-                        <div class="first-screen-timer-promotion">Акция* закончится через</div>
+                        <div class="block-order-promotion">Акция* закончится через</div>
 
-                        <div class="first-screen-timer-items">
-                            <div class="first-screen-timer-item">
-                                <div class="first-screen-timer-count js-timer-hours">00</div>
-                                <div class="first-screen-timer-text">Часов</div>
-                            </div>
-                            <div class="first-screen-timer-item">
-                                <div class="first-screen-timer-count js-timer-minutes">00</div>
-                                <div class="first-screen-timer-text">Минут</div>
-                            </div>
-                            <div class="first-screen-timer-item">
-                                <div class="first-screen-timer-count js-timer-seconds">00</div>
-                                <div class="first-screen-timer-text">Секунд</div>
-                            </div>
+                        <div class="timer" id="countdown">
+                            <span class="hours">00</span> : <span class="minutes">00</span> : <span class="seconds">00</span>
+                        </div>
+                        <div class="timer-desc">
+                            <span>Часов</span> <span>Минут</span> <span>Секунд</span>
                         </div>
 
                         <form action="" class="form">
@@ -70,16 +62,15 @@
                             <input type="text" id="username" required>
 
                             <label class="form-item" for="phone">Контактный телефон*</label>
-                            <input type="tel" id="phone" required>
+                            <input type="tel" id="phone" placeholder="+(7)" required>
 
                             <button class="button form-btn" type="submit">ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО</button>
                         </form>
 
-                        <div class="first-screen-timer-order">
+                        <div class="block-order-offer">
                             <span>*при заказе курса</span> <br>
                             Осталось всего 23 бесплатных упаковок
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -137,21 +128,180 @@
         </div>
     </div>
 
-    <div class="complex">
-        <div class="complex-box complex-box-bg">
-            <img class="complex-image" src="images/complex-conference.jpg" alt="sultan">
+    <div class="associations">
+        <div class="associations-box associations-box-bg">
+            <img class="associations-image" src="images/complex-conference.jpg" alt="sultan">
             <div class="container">
-                <div class="complex-item">
-                    <p class="complex-item-text">
+                <div class="associations-item">
+                    <p class="associations-item-text">
                         <span>Сила Султана</span> решает проблему комплексно, а не просто временно устраняет синдромы
                     </p>
 
-                    <p class="complex-item-text">
+                    <p class="associations-item-text">
                         Рекомендован врачами для лечения, профилактики и получения новых ощущений
                         Никаких побочных эффектов и негативного воздействия на организм.
                     </p>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="promo d-flex">
+            <div class="promo-text">Сила Султана разработана на основе древнетурецких рецептов, которые описаны еще в
+                старинных преданиях летописцев-монахов. Вы почувствуете себя настоящим повелителем!
+            </div>
+            <img class="promo-image" src="images/promo-sultan.png" alt="promo">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="effects">
+            <div class="effects-content">
+                <h2 class="effects-title">Как <span>Сила Султана</span> борется с проблемой?</h2>
+                <img class="effects-image" src="images/effects-image.png" alt="effects-image">
+
+                <div class="columns">
+                    <div class="column column-left effects-items">
+                        <div class="effects-item effects-item-1">Стимулирует естественную выработку тестостерона</div>
+                        <div class="effects-item effects-item-2">Обеспечивает стойкую и твердую эрекцию</div>
+                        <div class="effects-item effects-item-3">Пробуждает сильное сексуальное желание</div>
+                    </div>
+
+                    <div class="column column-right effects-items">
+                        <div class="effects-item effects-item-4">Повышает либидо и решительность</div>
+                        <div class="effects-item effects-item-5">Усиливает ощущения</div>
+                        <div class="effects-item effects-item-6">Увеличивает продолжительность полового акта</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="associations associations-image-left mb-0">
+        <div class="associations-box associations-box-bg">
+            <img class="associations-image" src="images/patent-image.jpg" alt="sultan">
+            <div class="container">
+                <div class="associations-item">
+                    <p class="patent-item-text">
+                        Наши врачи несколько лет работали в Турции, собирая секретные ингредиенты древнетурецких средств
+                        для повышения потенции. Мы запатентовали Силу Султана, получили официальное право производить и
+                        реализовывать препарат по России и в странах СНГ.
+                        Все подтверждающие документы и лицензии в электронном виде расположены на странице нашего сайта.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="order">
+        <div class="container">
+            <div class="columns d-flex">
+                <div class="column column-left">
+                    <div class="order-title">
+                        Хочешь почувствовать себя настоящим султаном &nbsp;в&nbsp;постели?
+                    </div>
+                    <img class="order-image" src="images/order-image.png" alt="order">
+                </div>
+                <div class="column">
+                    <div class="block-order">
+                        <div class="block-order-title">
+                            Успей получить <span>Силу Султана бесплатно*</span>, пока действует акция
+                        </div>
+                        <div class="block-order-promotion">Акция* закончится через</div>
+
+                        <div class="timer" id="countdown-2">
+                            <span class="hours">00</span> : <span class="minutes">00</span> : <span class="seconds">00</span>
+                        </div>
+                        <div class="timer-desc">
+                            <span>Часов</span> <span>Минут</span> <span>Секунд</span>
+                        </div>
+
+                        <form action="" class="form">
+                            <label class="form-item" for="username2">Ваше имя*</label>
+                            <input type="text" id="username2" required>
+
+                            <label class="form-item" for="phone2">Контактный телефон*</label>
+                            <input type="tel" id="phone2" placeholder="+(7)" required>
+
+                            <button class="button form-btn" type="submit">ЗАКАЗАТЬ ПРЕПАРАТ *БЕСПЛАТНО</button>
+                        </form>
+
+                        <div class="block-order-offer">
+                            <span>*при заказе курса</span> <br>
+                            Осталось всего 23 бесплатных упаковок
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="components">
+        <div class="container">
+            <div class="components-text">
+                Каждая таблетка – это мощный комплекс <span>100%</span> натуральных компонентов.
+            </div>
+            <img class="components-image" src="images/components-medicine.png" alt="medicine">
+
+            <div class="components-items d-flex">
+                <div class="components-item">
+                    <div class="components-item-title">Корень женьшеня обыкновенного</div>
+                    <div class="components-item-text">
+                        Повышает половое влечение, восполняет дефицит витаминов. Увеличивает
+                        синтез тестостерона, усиливает приток крови к члену, что обеспечивает
+                        стойкую и продолжительную эрекцию.
+                    </div>
+                    <img class="components-item-image components-item-image-zhenshen"
+                         src="images/components-zhen-shen.png" alt="жень-шень">
+                </div>
+
+                <div class="components-item">
+                    <div class="components-item-title">Экстракт коры муира пуама</div>
+                    <div class="components-item-text">
+                        Улучшает качество спермы и подвижность сперматозоидов.
+                        Поддерживают необходимый уровень тестостерона.
+                    </div>
+                    <img class="components-item-image components-item-image-muira"
+                         src="images/components-muira.png" alt="муира">
+                </div>
+
+                <div class="components-item">
+                    <div class="components-item-title">Корень эврикомы длиннолистной</div>
+                    <div class="components-item-text">
+                        Сильный афродизиак, повышает сексуальное влечение и положительно влияет на качество
+                        полового акта. Улучшает выносливость и физическую активность.
+                    </div>
+                    <img class="components-item-image components-item-image-eurycoma"
+                         src="images/components-eurycoma.png" alt="эурикома">
+                </div>
+
+                <div class="components-item">
+                    <div class="components-item-title">Ягоды <br> асаи</div>
+                    <div class="components-item-text">
+                        Растительный аналог «Виагры»: способствует стойкой эрекции, усиливает сексуальное
+                        возбуждение
+                        и пролонгирует ощущения во время оргазма.
+                    </div>
+                    <img class="components-item-image components-item-image-acai"
+                         src="images/components-acai-berry.png"
+                         alt="ягоды асаи">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="promo promo-bg">
+        <div class="container d-flex">
+            <div class="promo-text">
+                Вам не нужно судорожно принимать таблетку перед самим актом.
+                Вы султан и самостоятельно выбираете, когда хотите интимной близости.
+                Не спешите, получайте удовольствие и уверенность от своей решительности.
+            </div>
+            <img class="promo-image" src="images/promo-sultan.png" alt="promo">
         </div>
     </div>
 
