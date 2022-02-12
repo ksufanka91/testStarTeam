@@ -6,6 +6,11 @@
     border-radius: 15px;
     box-shadow: 0 4px 50px rgba(136, 136, 136, 0.25);
 
+    @include media-to(650px) {
+        max-width: 280px;
+        padding: 15px 22px;
+    }
+
     span {
         color: $color-text;
     }
@@ -14,6 +19,10 @@
         font-size: 18px;
         text-align: center;
         margin-bottom: 16px;
+
+        @include media-to(650px) {
+            font-size: 14px;
+        }
     }
 
     &-promotion {
@@ -27,6 +36,10 @@
         justify-content: space-between;
         padding: 0 20px;
         margin-bottom: 9px;
+
+        @include media-to(650px) {
+            padding: 0;
+        }
 
         span {
             font-size: 18px;
@@ -43,6 +56,10 @@
             display: flex;
             justify-content: space-between;
             padding: 0 30px;
+
+            @include media-to(650px) {
+                padding: 0 10px;
+            }
 
             span {
                 font-size: 12px;
@@ -76,6 +93,10 @@
         padding: 12px 14px;
         margin-bottom: 12px;
         cursor: pointer;
+
+        @include media-to(650px) {
+            margin-bottom: 0;
+        }
     }
 
     &-btn {
@@ -83,5 +104,12 @@
         margin: 21px auto 0;
         width: 90%;
         padding: 17px 22px;
+
+        @include media-to(650px) {
+            width: 100%;
+            padding: 14px 10px;
+            font-size: 16px;
+        }
+
     }
 }
