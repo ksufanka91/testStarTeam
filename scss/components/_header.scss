@@ -10,6 +10,13 @@
         flex-direction: column;
     }
 
+    @include media-to(480px) {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 12px;
+        padding: 20px 0 18px;
+    }
+
     @include media-to(425px) {
         width: 284px;
         margin: 0 auto;
@@ -19,15 +26,26 @@
         max-width: 650px;
         text-align: center;
 
-
         @include media-to(925px) {
             margin-bottom: 20px;
+        }
+
+        @include media-to(480px) {
+            margin-bottom: 26px;
         }
     }
 
     .button {
+
+        @include media-to(480px) {
+            min-width: 284px;
+            padding: 12px 16px 13px;
+        }
+
         @include media-to(425px) {
             width: 100%;
         }
+
+
     }
 }

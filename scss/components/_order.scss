@@ -9,8 +9,24 @@
     background-size: contain, 20%;
     color: $color-text-secondary;
 
+    @include media-to(768px) {
+        margin-bottom: 140px;
+    }
+
+  .columns {
+      @include media-to(890px) {
+          flex-direction: column;
+          align-items: center;
+      }
+  }
+
     .column {
         width: 50%;
+
+        @include media-to(890px) {
+            width: 100%;
+            text-align: center;
+        }
 
         &-left {
 
@@ -21,14 +37,36 @@
         text-align: center;
         max-width: 390px;
         margin: 20px 0 21px 69px;
+
+        @include media-to(890px) {
+            margin: 0 auto 20px;
+            width: 100%;
+        }
+
+        @include media-to(480px) {
+            font-size: 14px;
+        }
     }
 
     &-image {
         width: 253px;
         margin-left: 138px;
+
+        @include media-to(890px) {
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+
+        @include media-to(480px) {
+            max-width: 168px;
+        }
     }
 
     .block-order {
         margin-left: 67px;
+
+        @include media-to(890px) {
+           margin: 0 auto;
+        }
     }
 }

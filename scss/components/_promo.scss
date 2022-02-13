@@ -1,18 +1,43 @@
 .promo {
     padding: 31px 0 25px 0;
 
+    @include media-to(1000px) {
+        flex-direction: column;
+    }
+
     &-text {
         max-width: 79%;
         font-weight: 600;
         margin-right: 73px;
         text-align: center;
+
+        @include media-to(1000px) {
+            font-size: 12px;
+            order: 2;
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     &-image {
         margin-top: -13px;
+
+        @include media-to(1000px) {
+            order: 1;
+            align-self: center;
+            margin-bottom: 20px;
+        }
     }
 
     &-bg {
         background-color: #F8C67D;
+    }
+
+    &-box {
+
+        @include media-to(1000px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

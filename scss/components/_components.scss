@@ -4,12 +4,34 @@
     background-size: contain;
     padding-bottom: 47px;
 
+    @include media-to(480px) {
+
+        background: url("images/components-bg-mobile.png") no-repeat bottom;
+    }
+
+    &-pattern {
+
+        @include media-to(480px) {
+            display: block;
+            position: absolute;
+            left: -121px;
+            top: 82px;
+        }
+    }
 
     &-text {
         text-align: center;
         line-height: 36px;
-        max-width: 45%;
+        width: 45%;
         margin: 0 auto 87px;
+
+        @include media-to(768px) {
+            width: 65%;
+        }
+
+        @include media-to(375px) {
+            width: 100%;
+        }
 
         span {
             font-size: 30px;
@@ -19,13 +41,30 @@
     &-image {
         width: 150px;
         position: absolute;
-        top: -11px;
-        left: 181px;
+        top: -2%;
+        left: 10%;
+
+        @include media-to(768px) {
+            top: -10%;
+            left: 50%;
+            transform: translate(-50%, 20%);
+        }
+
+        @include media-to(480px) {
+            width: 93px;
+        }
     }
+
+
 
     &-items {
         display: flex;
         flex-wrap: wrap;
+
+        @include media-to(1000px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &-item {
@@ -37,6 +76,21 @@
         background: $color-text-secondary;
         box-shadow: 0 4px 80px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
+
+        @include media-to(1000px) {
+            margin-right: 0;
+            min-height: 252px;
+        }
+
+        @include media-to(768px) {
+            min-width: 320px;
+            padding: 24px 35px 20px;
+        }
+
+        @include media-to(375px) {
+            min-width: 250px;
+            padding: 24px 25px 20px;
+        }
 
         &:nth-child(even) {
             margin-right: 0;
@@ -50,36 +104,91 @@
             font-weight: 700;
             line-height: 36px;
             margin-bottom: 14px;
+
+            @include media-to(1000px) {
+                font-size: 18px;
+                line-height: 22px;
+                width: 150px;
+            }
         }
 
         &-text {
             font-size: 18px;
             font-weight: 600;
+
+            @include media-to(1000px) {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
         }
 
         &-image {
             position: absolute;
 
-
             &-zhenshen {
                 top: -66px;
                 right: -33px;
+
+                @include media-to(1200px) {
+                    max-width: 180px;
+                    top: -49px;
+                    right: -29px;
+                }
+
+                @include media-to(768px) {
+                    width: 140px;
+                }
             }
 
             &-muira {
                 width: 280px;
                 top: -33px;
                 right: -27px;
+
+                @include media-to(1200px) {
+                    max-width: 180px;
+                    top: -23px;
+                    right: -15px;
+                }
+
+                @include media-to(768px) {
+                    width: 140px;
+                }
+
+                @include media-to(375px) {
+
+                }
             }
 
             &-eurycoma {
                 top: -19px;
                 right: -55px;
+
+                @include media-to(1200px) {
+                    max-width: 180px;
+                    top: -18px;
+                    right: -17px;
+                }
+
+                @include media-to(768px) {
+                    width: 140px;
+                }
             }
 
             &-acai {
                 top: -53px;
                 right: -12px;
+
+                @include media-to(1200px) {
+                    max-width: 150px;
+                    top: -23px;
+                    right: -16px;
+                }
+
+                @include media-to(768px) {
+                    width: 140px;
+                }
             }
         }
     }

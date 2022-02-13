@@ -95,7 +95,7 @@
         cursor: pointer;
 
         @include media-to(650px) {
-            margin-bottom: 0;
+            margin-bottom: -5px;
         }
     }
 
@@ -106,7 +106,7 @@
         padding: 17px 22px;
 
         @include media-to(650px) {
-            width: 100%;
+            width: 95%;
             padding: 14px 10px;
             font-size: 16px;
         }

@@ -4,3 +4,9 @@
     }
 }
 
+@mixin media-from($from) {
+    @media (min-width: $from) {
+        @content;
+    }
+}
+
