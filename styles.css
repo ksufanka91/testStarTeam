@@ -1567,7 +1567,6 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width: 890px) {
   .order .column {
     width: 100%;
-    text-align: center;
   }
 }
 .order-title {
@@ -1593,8 +1592,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 890px) {
   .order-image {
-    margin-left: 0;
-    margin-bottom: 26px;
+    display: block;
+    margin: 0 auto 26px;
   }
 }
 @media (max-width: 480px) {

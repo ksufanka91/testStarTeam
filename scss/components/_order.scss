@@ -18,19 +18,18 @@
         padding-top: 31px;
     }
 
-  .columns {
-      @include media-to(890px) {
-          flex-direction: column;
-          align-items: center;
-      }
-  }
+    .columns {
+        @include media-to(890px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
     .column {
         width: 50%;
 
         @include media-to(890px) {
             width: 100%;
-            text-align: center;
         }
     }
 
@@ -55,8 +54,8 @@
         margin-left: 138px;
 
         @include media-to(890px) {
-            margin-left: 0;
-            margin-bottom: 26px;
+            display: block;
+            margin: 0 auto 26px;
         }
 
         @include media-to(480px) {
@@ -68,7 +67,7 @@
         margin-left: 67px;
 
         @include media-to(890px) {
-           margin: 0 auto;
+            margin: 0 auto;
         }
     }
 }
