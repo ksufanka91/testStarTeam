@@ -1615,6 +1615,7 @@ input[type=number]::-webkit-inner-spin-button {
   background: url("images/components-bg.png") no-repeat center bottom;
   background-size: contain;
   padding-bottom: 47px;
+  overflow: hidden;
 }
 @media (max-width: 480px) {
   .components {
@@ -1850,6 +1851,11 @@ input[type=number]::-webkit-inner-spin-button {
     width: 139px;
     top: -18px;
     right: 0;
+  }
+}
+@media (max-width: 450px) {
+  .components-item-image-acai {
+    width: 123px;
   }
 }
 

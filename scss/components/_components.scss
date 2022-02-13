@@ -3,6 +3,7 @@
     background: url("images/components-bg.png") no-repeat center bottom;
     background-size: contain;
     padding-bottom: 47px;
+    overflow: hidden;
 
     @include media-to(480px) {
         background: url("images/components-bg-mobile.png") no-repeat bottom;
@@ -225,6 +226,10 @@
                     width: 139px;
                     top: -18px;
                     right: 0;
+                }
+
+                @include media-to(450px) {
+                    width: 123px;
                 }
             }
         }
