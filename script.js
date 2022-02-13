@@ -1,4 +1,3 @@
-
 //timer
 function initializeClock(id, endtime) {
     let intervalId;
@@ -6,7 +5,6 @@ function initializeClock(id, endtime) {
     let hoursSpan = clock.querySelector('.hours');
     let minutesSpan = clock.querySelector('.minutes');
     let secondsSpan = clock.querySelector('.seconds');
-
 
     function getTimeRemaining(endtime) {
         let t = Date.parse(endtime) - Date.parse(new Date());

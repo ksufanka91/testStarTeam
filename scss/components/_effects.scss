@@ -60,10 +60,6 @@
             }
 
             @include media-to(820px) {
-                width: 90%;
-            }
-
-            @include media-to(480px) {
                 width: 100%;
             }
         }
@@ -227,7 +223,6 @@
             }
         }
     }
-
 
     &-image {
         position: absolute;
