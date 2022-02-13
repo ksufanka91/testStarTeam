@@ -3,7 +3,6 @@
     background-image: url("images/first-screen-bg.jpg");
     background-repeat: no-repeat;
     background-position: top center;
-
     color: $color-text-secondary;
     padding: 20px 0 36px;
     margin-bottom: 45px;
@@ -12,12 +11,12 @@
         background-image: url("images/first-screen-bg-mobile.jpg");
         background-size: 100%;
         overflow: hidden;
-
     }
 
-    @include media-to(479px) {
+    @include media-to(480px) {
         background-size: 120%;
         padding-bottom: 0;
+        margin-bottom: 38px;
     }
 
     @include media-to(400px) {
@@ -60,7 +59,7 @@
             transform: translate(60%);
         }
 
-        @include media-to(768px) {
+        @include media-to(480px) {
             width: 250px;
             right: 38%;
             top: 60px;

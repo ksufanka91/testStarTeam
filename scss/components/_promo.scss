@@ -17,6 +17,13 @@
             width: 100%;
             margin: 0 auto;
         }
+
+        @include media-to(480px) {
+            width: 73%;
+            line-height: 14px;
+            margin-bottom: 10px;
+        }
+
     }
 
     &-image {
@@ -26,6 +33,11 @@
             order: 1;
             align-self: center;
             margin-bottom: 20px;
+        }
+
+        @include media-to(480px) {
+            width: 82px;
+            margin-bottom: 10px;
         }
     }
 

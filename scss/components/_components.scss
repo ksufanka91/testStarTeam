@@ -5,8 +5,8 @@
     padding-bottom: 47px;
 
     @include media-to(480px) {
-
         background: url("images/components-bg-mobile.png") no-repeat bottom;
+        padding-bottom: 35px;
     }
 
     &-pattern {
@@ -14,8 +14,8 @@
         @include media-to(480px) {
             display: block;
             position: absolute;
-            left: -121px;
-            top: 82px;
+            left: -124px;
+            top: -51px;
         }
     }
 
@@ -29,12 +29,23 @@
             width: 65%;
         }
 
+        @include media-to(480px) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 47px;
+        }
+
         @include media-to(375px) {
             width: 100%;
         }
 
         span {
             font-size: 30px;
+
+            @include media-to(480px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
     }
 
@@ -45,13 +56,13 @@
         left: 10%;
 
         @include media-to(768px) {
-            top: -10%;
+            top: -7%;
             left: 50%;
-            transform: translate(-50%, 20%);
+            transform: translate(-55%, 20%);
         }
 
         @include media-to(480px) {
-            width: 93px;
+            width: 82px;
         }
     }
 
@@ -85,6 +96,10 @@
         @include media-to(768px) {
             min-width: 320px;
             padding: 24px 35px 20px;
+        }
+
+        @include media-to(480px) {
+            margin-bottom: 20px;
         }
 
         @include media-to(375px) {
@@ -139,6 +154,12 @@
                 @include media-to(768px) {
                     width: 140px;
                 }
+
+                @include media-to(1200px) {
+                    width: 154px;
+                    top: -41px;
+                    right: -11px;
+                }
             }
 
             &-muira {
@@ -156,9 +177,11 @@
                     width: 140px;
                 }
 
-                @include media-to(375px) {
-
+                @include media-to(480px) {
+                    top: 0;
+                    right: 0;
                 }
+
             }
 
             &-eurycoma {
@@ -166,13 +189,20 @@
                 right: -55px;
 
                 @include media-to(1200px) {
-                    max-width: 180px;
+                    width: 180px;
                     top: -18px;
                     right: -17px;
                 }
 
                 @include media-to(768px) {
                     width: 140px;
+                }
+
+                @include media-to(480px) {
+                    width: 180px;
+                    transform: rotate(25deg);
+                    top: 2px;
+                    right: -33px;
                 }
             }
 
@@ -181,13 +211,19 @@
                 right: -12px;
 
                 @include media-to(1200px) {
-                    max-width: 150px;
+                    width: 150px;
                     top: -23px;
                     right: -16px;
                 }
 
                 @include media-to(768px) {
                     width: 140px;
+                }
+
+                @include media-to(480px) {
+                    width: 139px;
+                    top: -18px;
+                    right: 0;
                 }
             }
         }

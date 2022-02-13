@@ -10,7 +10,14 @@
     color: $color-text-secondary;
 
     @include media-to(768px) {
-        margin-bottom: 140px;
+        margin-bottom: 84px;
+    }
+
+
+    @include media-to(480px) {
+        background: url("images/order-bg-mobile.png") no-repeat top center;
+        background-size: contain;
+        padding-top: 31px;
     }
 
   .columns {
@@ -44,6 +51,7 @@
         }
 
         @include media-to(480px) {
+            width: 50%;
             font-size: 14px;
         }
     }
@@ -54,7 +62,7 @@
 
         @include media-to(890px) {
             margin-left: 0;
-            margin-bottom: 30px;
+            margin-bottom: 26px;
         }
 
         @include media-to(480px) {
