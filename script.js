@@ -41,7 +41,7 @@ function initializeClock(id, endtime) {
 
 let today = new Date();
 let end = new Date(
-    today.setUTCHours(23,59,59,999)
+    today.setHours(23,59,59,999)
 );
 
 initializeClock('countdown', end);
