@@ -3,7 +3,6 @@
     background: url("images/components-bg.png") no-repeat center bottom;
     background-size: contain;
     padding-bottom: 47px;
-    overflow: hidden;
 
     @include media-to(480px) {
         background: url("images/components-bg-mobile.png") no-repeat bottom;
@@ -11,7 +10,6 @@
     }
 
     &-pattern {
-
         @include media-to(480px) {
             display: block;
             position: absolute;
@@ -60,9 +58,6 @@
             top: -7%;
             left: 50%;
             transform: translate(-55%, 20%);
-        }
-
-        @include media-to(480px) {
             width: 82px;
         }
     }
@@ -205,6 +200,11 @@
                     transform: rotate(25deg);
                     top: 2px;
                     right: -33px;
+                }
+
+                @include media-to(450px) {
+                    width: 150px;
+                    right: -20px;
                 }
             }
 
